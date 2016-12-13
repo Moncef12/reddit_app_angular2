@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { TopicListComponent } from './topics/topic-list/topic-list.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import { PostSearchComponent } from './posts/post-search/post-search.component';
+import { PostComponent } from './posts/post/post.component';
+
+
 import { PostService } from './posts/shared/post.service';
 import { TopicService } from './topics/shared/topic.service';
 
@@ -15,7 +18,8 @@ import { TopicService } from './topics/shared/topic.service';
     AppComponent,
     TopicListComponent,
     PostListComponent,
-    PostSearchComponent
+    PostSearchComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
