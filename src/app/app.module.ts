@@ -4,17 +4,25 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { TopicListComponent } from './topics/topic-list/topic-list.component';
+import { PostListComponent } from './posts/post-list/post-list.component';
+import { PostSearchComponent } from './posts/post-search/post-search.component';
+import { PostService } from './posts/shared/post.service';
+import { TopicService } from './topics/shared/topic.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopicListComponent,
+    PostListComponent,
+    PostSearchComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [PostService, TopicService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

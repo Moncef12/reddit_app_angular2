@@ -1,3 +1,20 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container-fluid">
+  <div class="row">
+    
+    <!--list of topics-->
+    <app-topic-list (onTopicSelected)="selectedTopic = $event"></app-topic-list>
+    <!--end list of topics-->
+    
+    <div class="col-md-5">
+
+      <!--search for posts  -->
+      <app-post-search></app-post-search>
+      <!--end search for posts  -->
+
+      <!--reddit post-->
+      <app-post-list [topic]="selectedTopic"></app-post-list>
+      <!--reddit post-->
+
+    </div>
+  </div>
+</div>
